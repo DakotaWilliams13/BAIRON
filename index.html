@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta name="description" content="BAIRON помогает собственникам B2B-компаний найти потери, связать процессы и создать систему управления на основе данных.">
+  <meta property="og:title" content="BAIRON">
+  <meta property="og:site_name" content="BAIRON">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="BAIRON помогает собственникам B2B-компаний найти потери, связать процессы и создать систему управления на основе данных.">
+  <meta property="og:image" content="">
+  
+  
+  <title>BAIRON</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css"/>
+
+  <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon.ico">
+  <link rel="icon" type="image/ico" sizes="16x16" href="img/favicon.ico">
+  <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__mark"><img src="img/logo2.1.png" alt="Логотип"></span>
+        <span class="logo__text">BAIRON</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#products" class="nav__link">Продукты</a>
+        <a href="#segments" class="nav__link">Для кого</a>
+        <a href="#process" class="nav__link">Как работаем</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#contact" class="nav__link">Контакты</a>
+        <!-- <li></li> -->
+      </nav>
+      <a href="#contact" class="btn-primary">
+        <span class="btn-primary__arrow btn-primary__arrow--left">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="btn-primary__text">Получить диагностику</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#products" class="mobile-menu__link">Продукты</a>
+      <a href="#segments" class="mobile-menu__link">Для кого</a>
+      <a href="#process" class="mobile-menu__link">Как работаем</a>
+      <a href="#faq" class="mobile-menu__link">FAQ</a>
+      <a href="#contact" class="mobile-menu__link">Контакты</a>
+      <a href="#contact" class="btn btn--primary mobile-menu__cta">Получить диагностику</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <h1 class="hero__title reveal">
+              Сделаем бизнес<br/>
+              <span class="gradient-text">управляемым</span>
+            </h1>
+            <p class="hero__subtitle reveal">
+              Покажем потери, свяжем процессы, CRM, дашборды и ИИ в единую систему управления.
+            </p>
+            <div class="hero__actions reveal">
+              <a href="#contact" class="btn btn--primary">
+                Получить диагностику
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#products" class="btn btn--ghost">Посмотреть продукты</a>
+            </div>
+            <div class="hero__stats reveal">
+              <div class="stat">
+                <div class="stat__value">7–10</div>
+                <div class="stat__label">дней на диагностику</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">6</div>
+                <div class="stat__label">продуктов в системе</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">B2B</div>
+                <div class="stat__label">20–500 сотрудников</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__visual reveal">
+            <div class="dashboard-mock">
+              <div class="dashboard-mock__header">
+                <div class="dashboard-mock__dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="dashboard-mock__title">Дашборд директора</div>
+              </div>
+              <div class="dashboard-mock__body">
+                <div class="kpi-row">
+                  <div class="kpi">
+                    <div class="kpi__label">Выручка</div>
+                    <div class="kpi__value">₽ 24.8M</div>
+                    <div class="kpi__trend kpi__trend--up">+12.4%</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Маржа</div>
+                    <div class="kpi__value">18.2%</div>
+                    <div class="kpi__trend kpi__trend--up">+2.1%</div>
+                  </div>
+                  <div class="kpi">
+                    <div class="kpi__label">Просрочки</div>
+                    <div class="kpi__value">₽ 1.4M</div>
+                    <div class="kpi__trend kpi__trend--down">−8.7%</div>
+                  </div>
+                </div>
+                <div class="chart">
+                  <div class="chart__bar" style="height: 40%"></div>
+                  <div class="chart__bar" style="height: 65%"></div>
+                  <div class="chart__bar" style="height: 50%"></div>
+                  <div class="chart__bar" style="height: 80%"></div>
+                  <div class="chart__bar" style="height: 72%"></div>
+                  <div class="chart__bar" style="height: 95%"></div>
+                  <div class="chart__bar" style="height: 88%"></div>
+                </div>
+                <div class="process-flow">
+                  <div class="flow-step flow-step--active">Заявка</div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-step flow-step--active">Договор</div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-step flow-step--active">Исполнение</div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-step">Оплата</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Боли -->
+    <section class="pains">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Проблемы</div>
+          <h2 class="section-title">Знакомо?</h2>
+          <p class="section-subtitle">Так выглядит бизнес без системы управления</p>
+        </div>
+        <div class="pains__grid">
+          <div class="pain-card reveal">
+            <div class="pain-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 3h18v18H3z M3 9h18 M9 21V9" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3 class="pain-card__title">Данные разбросаны</h3>
+            <p class="pain-card__text">Информация в Excel, чатах, почте и головах сотрудников. Единой картины нет.</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="pain-card__title">Отчёты вручную</h3>
+            <p class="pain-card__text">Руководитель не знает как посмотреть эффективность работы всей компании или отдельного сотрудника. Сотрудники руками собирают данные для отчета, тратят кучу времени</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="pain-card__title">CRM не управляет</h3>
+            <p class="pain-card__text">Система есть, но она не даёт управляемости. Менеджеры заполняют её формально.</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="pain-card__title">Заказы теряются</h3>
+            <p class="pain-card__text">Между отделами — пропасть. Клиент ждёт, сроки горят, виноватых нет.</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="pain-card__title">Забывают договорённости</h3>
+            <p class="pain-card__text">Встречи прошли, follow-up нет. Команда работает через «я думал, ты сделаешь».</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="pain-card__title">Узнают поздно</h3>
+            <p class="pain-card__text">О проблемах руководитель узнаёт, когда уже потеряны деньги или клиенты.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Продукты -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Продукты</div>
+          <h2 class="section-title">Что делает BAIRON</h2>
+          <p class="section-subtitle">6 продуктов, которые превращают хаос в систему</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal" data-product="diagnostics">
+            <div class="product-card__number">01</div>
+            <h3 class="product-card__title">Диагностика потерь и управляемости</h3>
+            <p class="product-card__desc">За 7–10 дней покажем, где в вашем бизнесе теряются деньги, сроки, клиенты и ответственность.</p>
+            <div class="product-card__meta">
+              <div class="product-card__meta-item">
+                <span class="label">Боль</span>
+                <span>Непонятно, где утечка</span>
+              </div>
+              <div class="product-card__meta-item">
+                <span class="label">Результат</span>
+                <span>Карта потерь и план</span>
+              </div>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__tag">Входной продукт</span>
+              <a href="#contact" class="product-card__link">
+                Подробнее
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-product="management">
+            <div class="product-card__number">02</div>
+            <h3 class="product-card__title">Управленческий контур собственника</h3>
+            <p class="product-card__desc">Соберём для руководителя единую картину бизнеса вместо управления через чаты, Excel и ручные отчёты.</p>
+            <div class="product-card__meta">
+              <div class="product-card__meta-item">
+                <span class="label">Боль</span>
+                <span>Нет единой картины</span>
+              </div>
+              <div class="product-card__meta-item">
+                <span class="label">Результат</span>
+                <span>Всё в одном окне</span>
+              </div>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__tag">Фундамент</span>
+              <a href="#contact" class="product-card__link">
+                Подробнее
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-product="process">
+            <div class="product-card__number">03</div>
+            <h3 class="product-card__title">Сквозной процесс</h3>
+            <p class="product-card__desc">Сделаем видимым весь путь заказа: Заявка → Договор → Исполнение → Оплата → Отгрузка.</p>
+            <div class="product-card__meta">
+              <div class="product-card__meta-item">
+                <span class="label">Боль</span>
+                <span>Заказы теряются</span>
+              </div>
+              <div class="product-card__meta-item">
+                <span class="label">Результат</span>
+                <span>Прозрачный поток</span>
+              </div>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__tag">Процессы</span>
+              <a href="#contact" class="product-card__link">
+                Подробнее
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-product="dashboard">
+            <div class="product-card__number">04</div>
+            <h3 class="product-card__title">Дашборд директора</h3>
+            <p class="product-card__desc">Руководитель за 5 минут видит продажи, деньги, просрочки, задачи и риски.</p>
+            <div class="product-card__meta">
+              <div class="product-card__meta-item">
+                <span class="label">Боль</span>
+                <span>Отчёты вручную</span>
+              </div>
+              <div class="product-card__meta-item">
+                <span class="label">Результат</span>
+                <span>5 минут на картину</span>
+              </div>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__tag">Аналитика</span>
+              <a href="#contact" class="product-card__link">
+                Подробнее
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-product="ai">
+            <div class="product-card__number">05</div>
+            <div class="product-card__badge">AI</div>
+            <h3 class="product-card__title">AI-ассистент руководителя</h3>
+            <p class="product-card__desc">ИИ фиксирует встречи, задачи, follow-up и управленческие сводки автоматически.</p>
+            <div class="product-card__meta">
+              <div class="product-card__meta-item">
+                <span class="label">Боль</span>
+                <span>Рутина съедает время</span>
+              </div>
+              <div class="product-card__meta-item">
+                <span class="label">Результат</span>
+                <span>Автоматизация рутины</span>
+              </div>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__tag">Искусственный интеллект</span>
+              <a href="#contact" class="product-card__link">
+                Подробнее
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-product="digital">
+            <div class="product-card__number">06</div>
+            <h3 class="product-card__title">Цифровой директор</h3>
+            <p class="product-card__desc">После внедрения система продолжает развиваться и не скатывается обратно в ручное управление.</p>
+            <div class="product-card__meta">
+              <div class="product-card__meta-item">
+                <span class="label">Боль</span>
+                <span>Откат к хаосу</span>
+              </div>
+              <div class="product-card__meta-item">
+                <span class="label">Результат</span>
+                <span>Постоянное развитие</span>
+              </div>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__tag">Поддержка</span>
+              <a href="#contact" class="product-card__link">
+                Подробнее
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before / After -->
+    <section class="before-after">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Трансформация</div>
+          <h2 class="section-title">До BAIRON / После BAIRON</h2>
+          <p class="section-subtitle">Визуальное сравнение состояний бизнеса</p>
+        </div>
+
+    <div class="ba-panels">
+      <!-- ДО -->
+      <div class="ba-panel ba-panel--before reveal">
+        <div class="ba-panel__label">ДО</div>
+        
+        <!-- Визуальный фон -->
+        <div class="ba-panel__visual">
+          <div class="chaos-mini">
+            <div class="cm__window cm__window--1">
+              <div class="cm__header"></div>
+              <div class="cm__content">
+                <div class="cm__line cm__line--err"></div>
+                <div class="cm__line"></div>
+                <div class="cm__line cm__line--err"></div>
+              </div>
+            </div>
+            <div class="cm__window cm__window--2">
+              <div class="cm__header"></div>
+              <div class="cm__content">
+                <div class="cm__msg"></div>
+                <div class="cm__msg cm__msg--short"></div>
+              </div>
+            </div>
+            <div class="cm__alert cm__alert--1">!</div>
+            <div class="cm__alert cm__alert--2">?</div>
+            <svg class="cm__lines" viewBox="0 0 200 150">
+              <path d="M20,30 Q80,10 140,60" stroke="#EF4444" stroke-width="1" fill="none" opacity="0.5"/>
+              <path d="M10,80 Q100,120 180,40" stroke="#EF4444" stroke-width="1" fill="none" opacity="0.4"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Текстовый блок -->
+        <div class="ba-panel__text">
+          <h3 class="ba-panel__title">Хаос</h3>
+          <ul class="ba-panel__list">
+            <li><span class="ba-panel__icon bad"></span>Данные в Excel и чатах</li>
+            <li><span class="ba-panel__icon bad"></span>Отчёты собираются вручную</li>
+            <li><span class="ba-panel__icon bad"></span>Заказы теряются между отделами</li>
+            <li><span class="ba-panel__icon bad"></span>CRM не даёт управляемости</li>
+            <li><span class="ba-panel__icon bad"></span>О проблемах узнают поздно</li>
+            <li><span class="ba-panel__icon bad"></span>Решения на интуиции</li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="ba-arrow reveal">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+
+      <!-- ПОСЛЕ -->
+      <div class="ba-panel ba-panel--after reveal">
+        <div class="ba-panel__label">ПОСЛЕ</div>
+        
+        <!-- Визуальный фон -->
+        <div class="ba-panel__visual">
+          <div class="order-mini">
+            <div class="om__dashboard">
+              <div class="om__header"></div>
+              <div class="om__kpis">
+                <div class="om__kpi"></div>
+                <div class="om__kpi"></div>
+                <div class="om__kpi"></div>
+                <div class="om__kpi"></div>
+              </div>
+              <div class="om__chart">
+                <div class="om__bar" style="height: 60%"></div>
+                <div class="om__bar" style="height: 80%"></div>
+                <div class="om__bar" style="height: 70%"></div>
+                <div class="om__bar" style="height: 90%"></div>
+              </div>
+              <div class="om__flow">
+                <div class="om__step"></div>
+                <div class="om__step"></div>
+                <div class="om__step"></div>
+                <div class="om__step"></div>
+              </div>
+            </div>
+            <div class="om__badge">✓</div>
+          </div>
+        </div>
+
+        <!-- Текстовый блок -->
+            <div class="ba-panel__text">
+              <h3 class="ba-panel__title">Система</h3>
+              <ul class="ba-panel__list">
+                <li><span class="ba-panel__icon good"></span>Единая картина бизнеса</li>
+                <li><span class="ba-panel__icon good"></span>Дашборд за 5 минут</li>
+                <li><span class="ba-panel__icon good"></span>Сквозной процесс без потерь</li>
+                <li><span class="ba-panel__icon good"></span>CRM как инструмент управления</li>
+                <li><span class="ba-panel__icon good"></span>Риски видны заранее</li>
+                <li><span class="ba-panel__icon good"></span>Решения по данным</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Для кого -->
+    <section class="segments" id="segments">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Аудитория</div>
+          <h2 class="section-title">Для кого подходит</h2>
+          <p class="section-subtitle">B2B-компании от 20 до 500 сотрудников</p>
+        </div>
+        <div class="segments__grid">
+          <div class="segment-card reveal">
+            <div class="segment-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1M14 9h1M9 13h1M14 13h1M9 17h1M14 17h1" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Производственные компании</h3>
+            <p>Сроки, отгрузки, себестоимость, загрузка мощностей</p>
+          </div>
+          <div class="segment-card reveal">
+            <div class="segment-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h18M7 3v18M17 3v18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Оптовые компании</h3>
+            <p>Заказы, склад, дебиторка, клиенты, отгрузки</p>
+          </div>
+          <div class="segment-card reveal">
+            <div class="segment-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M20 7h-4V3H8v4H4l8 8 8-8zM4 19h16v2H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Сервисные B2B</h3>
+            <p>Проекты, загрузка команды, маржа, retention</p>
+          </div>
+          <div class="segment-card reveal">
+            <div class="segment-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Собственники и CEO</h3>
+            <p>Управляемость, прозрачность, контроль без микроменеджмента</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Как работаем -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Методология</div>
+          <h2 class="section-title">Как мы работаем</h2>
+          <p class="section-subtitle">От диагностики до постоянного развития системы</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline__line"></div>
+          <div class="timeline__step reveal">
+            <div class="timeline__num">01</div>
+            <div class="timeline__content">
+              <h3>Диагностика</h3>
+              <p>Находим потери, узкие места и зоны риска за 7–10 дней</p>
+            </div>
+          </div>
+          <div class="timeline__step reveal">
+            <div class="timeline__num">02</div>
+            <div class="timeline__content">
+              <h3>Карта процессов</h3>
+              <p>Описываем, как бизнес работает сейчас и как должен работать</p>
+            </div>
+          </div>
+          <div class="timeline__step reveal">
+            <div class="timeline__num">03</div>
+            <div class="timeline__content">
+              <h3>Проектирование</h3>
+              <p>Собираем архитектуру: CRM, дашборды, интеграции, ИИ</p>
+            </div>
+          </div>
+          <div class="timeline__step reveal">
+            <div class="timeline__num">04</div>
+            <div class="timeline__content">
+              <h3>Внедрение</h3>
+              <p>Настраиваем системы, связываем процессы, запускаем</p>
+            </div>
+          </div>
+          <div class="timeline__step reveal">
+            <div class="timeline__num">05</div>
+            <div class="timeline__content">
+              <h3>Обучение</h3>
+              <p>Команда осваивает систему и начинает работать в ней</p>
+            </div>
+          </div>
+          <div class="timeline__step reveal">
+            <div class="timeline__num">06</div>
+            <div class="timeline__content">
+              <h3>Развитие</h3>
+              <p>Система не откатывается — мы сопровождаем и развиваем</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Лестница продуктов -->
+    <section class="ladder">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Продуктовая лестница</div>
+          <h2 class="section-title">Путь управляемости</h2>
+          <p class="section-subtitle">От диагностики до цифрового директора</p>
+        </div>
+        <div class="ladder__track reveal">
+          <div class="ladder__step">
+            <div class="ladder__dot"></div>
+            <div class="ladder__label">Диагностика</div>
+          </div>
+          <div class="ladder__connector"></div>
+          <div class="ladder__step">
+            <div class="ladder__dot"></div>
+            <div class="ladder__label">Контур</div>
+          </div>
+          <div class="ladder__connector"></div>
+          <div class="ladder__step">
+            <div class="ladder__dot"></div>
+            <div class="ladder__label">Сквозной процесс</div>
+          </div>
+          <div class="ladder__connector"></div>
+          <div class="ladder__step">
+            <div class="ladder__dot"></div>
+            <div class="ladder__label">Дашборд</div>
+          </div>
+          <div class="ladder__connector"></div>
+          <div class="ladder__step">
+            <div class="ladder__dot ladder__dot--ai"></div>
+            <div class="ladder__label">AI</div>
+          </div>
+          <div class="ladder__connector"></div>
+          <div class="ladder__step">
+            <div class="ladder__dot"></div>
+            <div class="ladder__label">Цифровой директор</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Доверие -->
+    <section class="trust">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Принципы</div>
+          <h2 class="section-title">Как мы работаем</h2>
+        </div>
+        <div class="trust__grid">
+          <div class="trust-card reveal">
+            <h3>Без фейковых кейсов</h3>
+            <p>Мы не публикуем выдуманные цифры. Только реальные принципы и подходы.</p>
+          </div>
+          <div class="trust-card reveal">
+            <h3>Не ради инструментов</h3>
+            <p>CRM, дашборды и ИИ — это средства. Цель — управляемость бизнеса.</p>
+          </div>
+          <div class="trust-card reveal">
+            <h3>Работаем в реальной жизни</h3>
+            <p>Система должна работать не на бумаге, а в ежедневной операционке.</p>
+          </div>
+          <div class="trust-card reveal">
+            <h3>Фокус на результат</h3>
+            <p>Измеряем успех не часами работы, а появившейся управляемостью.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Вопросы</div>
+          <h2 class="section-title">FAQ</h2>
+        </div>
+        <div class="faq__list">
+          <div class="faq-item reveal">
+            <button class="faq-item__q">
+              <span>Чем BAIRON отличается от интегратора CRM?</span>
+              <span class="faq-item__icon"></span>
+            </button>
+            <div class="faq-item__a">
+              <p>Интегратор внедряет инструмент. Мы собираем систему управления: процессы, ответственность, данные, дашборды и ИИ. CRM — лишь часть этой системы.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__q">
+              <span>Сколько длится диагностика?</span>
+              <span class="faq-item__icon"></span>
+            </button>
+            <div class="faq-item__a">
+              <p>7–10 рабочих дней. По итогу вы получаете карту потерь, список рисков и план действий.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__q">
+              <span>С какими компаниями вы работаете?</span>
+              <span class="faq-item__icon"></span>
+            </button>
+            <div class="faq-item__a">
+              <p>С B2B-компаниями от 20 до 500 сотрудников: производство, опт, сервис. Там, где процессы уже есть, но они не управляемы.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__q">
+              <span>Нужно ли менять текущие системы?</span>
+              <span class="faq-item__icon"></span>
+            </button>
+            <div class="faq-item__a">
+              <p>Не обязательно. Мы работаем с тем, что уже есть: 1С, Bitrix24, amoCRM, HubSpot. Связываем их в единую систему.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__q">
+              <span>Что такое «Цифровой директор»?</span>
+              <span class="faq-item__icon"></span>
+            </button>
+            <div class="faq-item__a">
+              <p>Это режим постоянного развития системы. После внедрения мы сопровождаем компанию, чтобы она не откатилась в ручное управление.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__q">
+              <span>Как вы внедряете ИИ?</span>
+              <span class="faq-item__icon"></span>
+            </button>
+            <div class="faq-item__a">
+              <p>ИИ — не ради хайпа. Мы внедряем его там, где он даёт измеримый эффект: фиксация встреч, follow-up, управленческие сводки, анализ данных.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__q">
+              <span>Сколько стоит внедрение?</span>
+              <span class="faq-item__icon"></span>
+            </button>
+            <div class="faq-item__a">
+              <p>Зависит от масштаба и выбранных продуктов. Точную стоимость называем после диагностики — она же показывает, какие потери вы несёте сейчас.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__q">
+              <span>Что будет, если мы уже пробовали автоматизацию?</span>
+              <span class="faq-item__icon"></span>
+            </button>
+            <div class="faq-item__a">
+              <p>Это частая ситуация. Обычно проблема не в инструменте, а в отсутствии процессов и управляющего контура. Мы начинаем с этого.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Форма -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div class="eyebrow">Заявка</div>
+            <h2 class="section-title">Получить диагностику</h2>
+            <p class="contact__text">За 7–10 дней покажем, где в вашем бизнесе теряются деньги, сроки, клиенты и ответственность.</p>
+            <div class="contact__meta">
+              <div class="contact__meta-item">
+                <span class="label">Email</span>
+                <a href="mailto:hello@bairon.io">hello@bairon.io</a>
+              </div>
+              <div class="contact__meta-item">
+                <span class="label">Telegram</span>
+                <a href="#">@bairon</a>
+              </div>
+            </div>
+          </div>
+          <form class="lead-form reveal" id="leadForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Имя *</label>
+                <input type="text" id="name" name="name" required />
+                <span class="form-error" data-for="name"></span>
+              </div>
+              <div class="form-field">
+                <label for="company">Компания *</label>
+                <input type="text" id="company" name="company" required />
+                <span class="form-error" data-for="company"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="position">Должность</label>
+                <input type="text" id="position" name="position" />
+              </div>
+              <div class="form-field">
+                <label for="phone">Телефон / Telegram *</label>
+                <input type="text" id="phone" name="phone" required />
+                <span class="form-error" data-for="phone"></span>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+              <span class="form-error" data-for="email"></span>
+            </div>
+            <div class="form-field">
+              <label for="product">Интересующий продукт</label>
+              <select id="product" name="product">
+                <option value="">Выберите продукт</option>
+                <option>Диагностика потерь</option>
+                <option>Управленческий контур</option>
+                <option>Сквозной процесс</option>
+                <option>Дашборд директора</option>
+                <option>AI-ассистент</option>
+                <option>Цифровой директор</option>
+                <option>Не знаю, нужна консультация</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="task">Описание задачи</label>
+              <textarea id="task" name="task" rows="4" placeholder="Коротко опишите ситуацию в компании"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span class="btn__text">Отправить заявку</span>
+              <span class="btn__loader"></span>
+            </button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="logo">
+            <span class="logo__mark"><img src="img/logo2.1.png" alt="Логотип"></span>
+            <span class="logo__text">BAIRON</span>
+          </a>
+          <p>Управляемость бизнеса через процессы, CRM, дашборды и ИИ.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Продукты</h4>
+          <a href="#products">Диагностика</a>
+          <a href="#products">Управленческий контур</a>
+          <a href="#products">Сквозной процесс</a>
+          <a href="#products">Дашборд директора</a>
+          <a href="#products">AI-ассистент</a>
+          <a href="#products">Цифровой директор</a>
+        </div>
+        <div class="footer__col">
+          <h4>Компания</h4>
+          <a href="#process">Как работаем</a>
+          <a href="#segments">Для кого</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Контакты</a>
+        </div>
+        <div class="footer__col">
+          <h4>Контакты</h4>
+          <a href="mailto:hello@bairon.io">hello@bairon.io</a>
+          <a href="#">Telegram</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 BAIRON. Все права защищены.</span>
+        <span>Сделано с вниманием к деталям</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA -->
+  <a href="#contact" class="sticky-cta" id="stickyCta">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Получить диагностику</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
