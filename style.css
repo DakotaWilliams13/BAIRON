@@ -193,7 +193,7 @@ select {
   cursor: pointer;
   white-space: nowrap;
 }
-/* .btn--primary {
+.btn--primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #fff;
   box-shadow: 0 4px 20px rgba(59,130,246,0.3);
@@ -201,7 +201,7 @@ select {
 .btn--primary:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 28px rgba(59,130,246,0.45);
-} */
+}
 .btn--ghost {
   background: transparent;
   color: var(--text);
@@ -220,77 +220,7 @@ select {
 }
 .btn.loading .btn__text { opacity: 0.5; }
 .btn.loading .btn__loader { display: block; }
-@keyframes spin { 
-  to { transform: rotate(360deg); } 
-}
-
-
-
-
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px 20px;
-  background: linear-gradient(135deg, #3B82F6, #2563EB);
-  color: #fff;
-  border-radius: 100px;
-  font-weight: 600;
-  font-size: 16px;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  border: none;
-  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
-  min-width: 260px; /* Фиксируем минимальную ширину */
-}
-
-.btn-primary__text {
-  position: relative;
-  z-index: 2;
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-primary__arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  z-index: 2;
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 22px;
-  height: 22px;
-}
-
-.btn-primary__arrow--left {
-  opacity: 0;
-  left: 10px;
-  transform: translateX(-8px);
-}
-
-.btn-primary:hover {
-  background: linear-gradient(135deg, #60A5FA, #3B82F6);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(59, 130, 246, 0.45);
-  /* Убрали изменение padding-left */
-}
-.btn-primary:hover .btn-primary__arrow--left {
-  opacity: 1;
-  transform: translateX(0);
-}
-.btn-primary:hover .btn-primary__arrow--right {
-  opacity: 0;
-  transform: translateX(8px);
-}
-.btn-primary:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
-}
-
-
+@keyframes spin { to { transform: rotate(360deg); } }
 /* ------------------ hero ------------------ */
 .hero {
   padding: 160px 0 100px;
@@ -1407,11 +1337,12 @@ select {
   color: var(--text-dim);
 }
 
-/* ------------------ STICKY CTA ------------------ */
+/* ------------------ sticky-cta ------------------ */
 .sticky-cta {
   position: fixed;
-  bottom: 24px; right: 24px;
-  padding: 14px 22px;
+  bottom: 24px;
+  right: 24px;
+  padding: 14px 44px 14px 44px; /* Увеличены боковые отступы для стрелок */
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #fff;
   border-radius: 100px;
@@ -1419,22 +1350,59 @@ select {
   font-weight: 500;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  box-shadow: 0 10px 30px rgba(59,130,246,0.4);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
   opacity: 0;
   transform: translateY(20px);
   pointer-events: none;
-  transition: all 0.3s ease;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 50;
+  text-decoration: none;
+  min-width: 240px;
 }
+
 .sticky-cta.visible {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
+
+.sticky-cta__text {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sticky-cta__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 18px;
+  height: 18px;
+}
+.sticky-cta__arrow--left {
+  opacity: 0;
+  left: 17px;
+  transform: translateX(-8px);
+}
+
 .sticky-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 40px rgba(59,130,246,0.55);
+  box-shadow: 0 14px 40px rgba(59, 130, 246, 0.55);
+}
+
+.sticky-cta:hover .sticky-cta__arrow--left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sticky-cta:hover .sticky-cta__arrow--right {
+  opacity: 0;
+  transform: translateX(8px);
 }
 
 /* ------------------ REVEAL ANIMATIONS ------------------ */
@@ -1530,7 +1498,7 @@ select {
   }
 
   .ladder__connector {
-    display: ;
+    display: none;
   }
 
   .ladder__label {
